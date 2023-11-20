@@ -19,26 +19,8 @@ namespace Emne3_RandomHobbyGenerator
             Console.WriteLine("Hei, hva heter du? Si navnet ditt så jeg kan si noe om deg.");
             Console.ReadLine();
             var randomNumber = number.Next(0, 5);
-            if (randomNumber == 0)
-            {
-                Console.WriteLine($"{tekstArray[0]}");
-            }
-            else if (randomNumber == 1) 
-            {
-                Console.WriteLine($"{tekstArray[1]}");
-            }
-            else if (randomNumber == 2)
-            { 
-                Console.WriteLine($"{tekstArray[2]}"); 
-            }
-            else if (randomNumber == 3) 
-            { 
-                Console.WriteLine($"{tekstArray[3]}"); 
-            }
-            else 
-            { 
-                Console.WriteLine($"{tekstArray[4]}"); 
-            }
+
+            Console.WriteLine(tekstArray[randomNumber]);
         }
 
         public static void startOver()
